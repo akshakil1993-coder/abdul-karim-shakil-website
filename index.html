@@ -1,0 +1,897 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abdul Karim Shakil | Supply Chain & Business Development</title>
+
+<meta name="description" content="Abdul Karim Shakil - Supply Chain, Strategic Sourcing, Procurement and Business Development Professional with 10 years of experience.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navy: #102544;
+    --dark: #09172b;
+    --gold: #c5a46d;
+    --light: #f4f6fa;
+    --text: #526174;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #263449;
+    line-height: 1.8;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+    background: var(--dark);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    color: var(--gold);
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(120deg, #09172b, #193b63);
+    color: white;
+    padding: 90px 0;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-label {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.15;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #d4dce7;
+    max-width: 700px;
+    font-size: 16px;
+}
+
+/* HERO PROFILE IMAGE */
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 370px;
+    height: 440px;
+    object-fit: cover;
+    object-position: center top;
+    border: 5px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 27px;
+    margin: 8px 8px 0 0;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 85px 0;
+}
+
+.section-label {
+    color: #a88750;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--navy);
+    margin: 12px 0 25px;
+}
+
+.section-intro {
+    color: var(--text);
+    max-width: 800px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: white;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 360px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
+    border: 4px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(16,37,68,.12);
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.about-highlight {
+    margin-top: 30px;
+    padding: 25px;
+    border-left: 4px solid var(--gold);
+    background: var(--light);
+    color: var(--navy);
+    font-weight: 600;
+}
+
+/* STATS */
+
+.stats {
+    background: var(--navy);
+    color: white;
+    padding: 50px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.stat h2 {
+    color: var(--gold);
+    font-size: 40px;
+}
+
+.stat p {
+    color: #d5dce7;
+    font-size: 14px;
+}
+
+/* EXPERTISE */
+
+.expertise {
+    background: var(--light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e7ebf0;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+    background: white;
+}
+
+.timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 30px;
+    margin-top: 35px;
+}
+
+.timeline-item {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    border-radius: 50%;
+    position: absolute;
+    left: -37px;
+    top: 9px;
+}
+
+.timeline-item h3 {
+    color: var(--navy);
+}
+
+.timeline-item strong {
+    color: #a88750;
+}
+
+/* APPROACH */
+
+.approach {
+    background: var(--light);
+}
+
+.approach-box {
+    background: var(--navy);
+    padding: 45px;
+    color: white;
+    border-radius: 5px;
+}
+
+.approach-box h2 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* INSIGHTS */
+
+.insights {
+    background: white;
+}
+
+/* CONTACT */
+
+.contact {
+    background: var(--dark);
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    color: #c7d0dd;
+    margin-bottom: 12px;
+}
+
+.contact a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background: #050e1c;
+    color: #aeb8c7;
+    padding: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero-image img {
+        max-width: 290px;
+        height: 340px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 280px;
+        height: 330px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .approach-box {
+        padding: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+<div class="container">
+<nav>
+
+<div class="logo">
+ABDUL KARIM <span>SHAKIL</span>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#insights">Insights</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<!-- HERO SECTION -->
+
+<div class="hero" id="home">
+<div class="container">
+
+<div class="hero-layout">
+
+<div class="hero-content">
+
+<div class="hero-label">
+EXECUTIVE PROFILE | PERSONAL BRAND
+</div>
+
+<h1>
+Abdul Karim<br>
+<span>Shakil</span>
+</h1>
+
+<h2>
+Strategic Supply Chain & Business Development Professional
+</h2>
+
+<p>
+Driving sustainable business growth through strategic sourcing,
+commercial excellence, operational efficiency and
+transformative business partnerships.
+</p>
+
+<div class="buttons">
+
+<a href="#experience" class="btn btn-gold">
+EXPLORE MY JOURNEY
+</a>
+
+<a href="#contact" class="btn btn-outline">
+LET'S CONNECT
+</a>
+
+</div>
+</div>
+
+<!-- HERO PROFILE PHOTO -->
+
+<div class="hero-image">
+<img src="images/shakil.jpg"
+alt="Abdul Karim Shakil - Professional Profile Photo">
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+<div class="container">
+
+<div class="about-layout">
+
+<div class="about-image">
+<img src="images/shakil.jpg"
+alt="Abdul Karim Shakil">
+</div>
+
+<div class="about-text">
+
+<div class="section-label">ABOUT ME</div>
+
+<h2 class="section-title">
+Creating Business Value Through Strategic Leadership
+</h2>
+
+<p>
+I am Abdul Karim Shakil, a results-driven Supply Chain
+and Business Development professional with 10 years
+of professional experience across sourcing, procurement,
+commercial operations, vendor relationship management
+and strategic business development.
+</p>
+
+<p>
+Throughout my career, I have developed a strong
+understanding of end-to-end supply chain operations,
+strategic supplier partnerships, commercial negotiations,
+procurement planning and business operations.
+</p>
+
+<p>
+My professional approach combines strategic thinking,
+commercial intelligence, operational discipline and
+collaborative leadership to strengthen business
+performance and create sustainable organizational value.
+</p>
+
+<p>
+I believe successful businesses are built on strong
+partnerships, effective supply chain strategies,
+continuous improvement and the ability to turn
+complex operational challenges into opportunities
+for long-term growth.
+</p>
+
+<div class="about-highlight">
+My Professional Philosophy: Building stronger
+businesses through smarter supply chains,
+strategic partnerships and sustainable growth.
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+
+<div class="stats">
+<div class="container">
+<div class="stats-grid">
+
+<div class="stat">
+<h2>10+</h2>
+<p>Years of Professional Experience</p>
+</div>
+
+<div class="stat">
+<h2>360°</h2>
+<p>Supply Chain Perspective</p>
+</div>
+
+<div class="stat">
+<h2>Growth</h2>
+<p>Business Development Focus</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- EXPERTISE -->
+
+<section class="expertise" id="expertise">
+<div class="container">
+
+<div class="section-label">CORE COMPETENCIES</div>
+
+<h2 class="section-title">
+Areas of Expertise
+</h2>
+
+<p class="section-intro">
+Combining commercial expertise, strategic thinking
+and operational capabilities to deliver business value.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Supply Chain Management</h3>
+<p>
+End-to-end supply chain operations,
+planning, coordination and efficiency.
+</p>
+</div>
+
+<div class="card">
+<h3>Strategic Sourcing</h3>
+<p>
+Supplier identification, sourcing strategy,
+cost optimization and procurement planning.
+</p>
+</div>
+
+<div class="card">
+<h3>Business Development</h3>
+<p>
+Business opportunities, strategic partnerships
+and sustainable commercial growth.
+</p>
+</div>
+
+<div class="card">
+<h3>Commercial Negotiation</h3>
+<p>
+Strategic negotiation, pricing management
+and commercial relationship development.
+</p>
+</div>
+
+<div class="card">
+<h3>Vendor Management</h3>
+<p>
+Supplier relationships, credit management,
+partnerships and performance improvement.
+</p>
+</div>
+
+<div class="card">
+<h3>Procurement Strategy</h3>
+<p>
+Purchase planning, procurement execution
+and cost-effective sourcing solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Inventory Management</h3>
+<p>
+Stock planning, inventory optimization
+and product availability management.
+</p>
+</div>
+
+<div class="card">
+<h3>Commercial Operations</h3>
+<p>
+Business operations, commercial coordination
+and execution excellence.
+</p>
+</div>
+
+<div class="card">
+<h3>Strategic Business Planning</h3>
+<p>
+Business analysis, strategic thinking
+and long-term value creation.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="experience" id="experience">
+<div class="container">
+
+<div class="section-label">CAREER JOURNEY</div>
+
+<h2 class="section-title">
+Professional Experience
+</h2>
+
+<p class="section-intro">
+A professional journey shaped by sourcing,
+supply chain management, commercial strategy
+and business operations.
+</p>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Chaldal PLC</h3>
+
+<strong>
+Assistant Director – Supply Chain
+</strong>
+
+<p>
+Professional experience across sourcing,
+procurement, supply chain management,
+commercial negotiations, vendor management
+and business operations.
+</p>
+
+<p>
+March 2017 – Present
+</p>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- APPROACH -->
+
+<section class="approach">
+<div class="container">
+
+<div class="approach-box">
+
+<h2>My Strategic Approach</h2>
+
+<p>
+I focus on connecting business strategy with
+operational execution. Through effective sourcing,
+strong supplier partnerships, commercial discipline
+and continuous improvement, I aim to contribute
+to resilient supply chains and sustainable business growth.
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- INSIGHTS -->
+
+<section class="insights" id="insights">
+<div class="container">
+
+<div class="section-label">THOUGHT LEADERSHIP</div>
+
+<h2 class="section-title">
+Insights & Perspectives
+</h2>
+
+<p class="section-intro">
+Exploring ideas, experiences and perspectives
+on modern supply chain management, strategic sourcing,
+procurement, business development and entrepreneurship.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Modern Supply Chain Strategy</h3>
+<p>
+The importance of building efficient,
+resilient and sustainable supply chains.
+</p>
+</div>
+
+<div class="card">
+<h3>Strategic Procurement</h3>
+<p>
+How smarter sourcing decisions can
+create long-term business value.
+</p>
+</div>
+
+<div class="card">
+<h3>Business Growth & Partnerships</h3>
+<p>
+Building meaningful commercial relationships
+for sustainable business development.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+<div class="container">
+
+<div class="section-label">GET IN TOUCH</div>
+
+<h2 class="section-title">
+Let's Build Something Meaningful
+</h2>
+
+<p>
+I welcome professional connections,
+business collaborations and meaningful
+conversations around supply chain,
+business development and entrepreneurship.
+</p>
+
+<p>
+Email:
+<a href="mailto:akshakil.1993@gmail.com">
+akshakil.1993@gmail.com
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a
+href="https://www.linkedin.com/in/abdul-karim-shakil-9a3109359"
+target="_blank"
+rel="noopener noreferrer">
+View My LinkedIn Profile
+</a>
+</p>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 Abdul Karim Shakil.
+All Rights Reserved.
+</footer>
+
+</body>
+  </html>
+  
